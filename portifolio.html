@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/sucesso.css"> <!-- Estilo específico -->
+    <title>Portifolio Beatriz Silva</title>
+    <script src="https://kit.fontawesome.com/a3a1cd8ebf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <input type="checkbox" id="checkbox" class="checkbox"/>
+            <label for="checkbox" class="label-menu">Menu<samp class="hamburger"></samp></label>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="Inicio">
+            <div class="Container">
+                <div class="topo">
+                <img src="imagens/beatriz-foto-port.png" alt="Foto de Beatriz" class="perfil-img">
+                <div class="texto-perfil">
+                    <h1>BEATRIZ SILVA</h1>
+                    <p>Desenvolvedora front-end apaixonada por criar interfaces elegantes e funcionais.<br/>Adoro resolver problemas complexos e trazer ideias à vida com código.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="Sobre">
+            <div class="Container">
+                <div class="sobre">                
+                    <h2>Sobre</h2>
+                    <p>
+                        <span class="destacado">Desenvolvedora web</span> apaixonada por transformar ideias em experiências digitais impactantes. Com um olhar atento para detalhes e um compromisso com a qualidade, meu trabalho se concentra em criar <span class="destacado">interfaces intuitivas</span> e <span class="destacado">visualmente atraentes</span> que proporcionam uma experiência excepcional ao usuário.
+                        Minha jornada começou quando eu era fascinada por tecnologia e passei a explorar o <span class="destacado">design de interfaces</span> no meu tempo livre. Depois de muitos projetos pessoais, decidi transformar minha paixão em carreira e mergulhei no desenvolvimento web. Atualmente, estou aprimorando minhas habilidades em <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript ES6</strong> .
+                        Quando não estou codificando, adoro explorar novas tecnologias, especialmente aquelas relacionadas a design de UI/UX. Também gosto de participar de hackathons e colaborar em projetos comunitários de código aberto.
+                    </p>
+                </div>
+                <div class="habilidades">
+                    <ul class="Skills-list">
+                        <li><i class="fa-brands fa-html5" style="color: black;"></i>HTML5</li>
+                        <li><i class="fa-brands fa-css3" style="color: black;"></i>CSS3</li>
+                        <li><i class="fa-brands fa-js" style="color: black;"></i>JAVASCRIPT</li>
+                        <li><i class="fa-brands fa-react" style="color: black;"></i>REACT</li>
+                        <li><i class="fa-brands fa-node" style="color: black;"></i>NODE.JS</li>
+                        <li><i class="fa-solid fa-code" style="color: black;"></i>SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="Projetos">
+            <div class="Container">
+                <h2>Trabalhos em Destaque</h2>
+                    <div class="Project-grid">
+                        <div class="project">
+                            <img src="imagens/site1.png" alt="Projeto 1">
+                            <h3>Site de Cuidados com a Pele</h3>
+                            <p>
+                                Um site dedicado a oferecer informações e produtos para cuidados com a pele, focando em rotinas de skincare personalizadas.
+                            </p>
+                            <a href="https://cuidedasuapele.com/" class="btn">Ver Projeto</a>
+                        </div>
+
+                        <div class="project">
+                            <img src="imagens/blog2.png" alt="Projeto 2">
+                            <h3>Blog sobre Beleza e Estilo de Vida</h3>
+                            <p>Um blog interativo que explora diversos temas relacionados à beleza e estilo de vida saudável.</p>
+                            <a href="https://cuidedasuapele.com/inicio/blog/" class="btn">Ver Projeto</a>
+                        </div>
+
+                        <div class="project">
+                            <img src="imagens/quiz3.png" alt="Projeto 3">
+                            <h3>Aplicativo de Monitoramento de Rotina de Skincare</h3>
+                            <p> Um aplicativo inovador projetado para ajudar os usuários a monitorar suas rotinas de cuidados com a pele.</p>
+                            <a href="https://www.sallve.com.br/pages/quiz-perguntas" class="btn">Ver Projeto</a>
+                        </div>
+                    </div>
+            </div><!---projetos--->
+        </section>
+
+        <section id="contato" class="Contato">
+            <div class="Container">
+                <h2>Entre em Contato</h2>
+                <form id="sheetdb-form" action="https://sheetdb.io/api/v1/6ufydimgyy82v" method="post" name="Fórmulario Portifolio beasilvamg">
+                    <input type="text" name="data[nome]" placeholder="Digite seu nome" required>
+                    <input type="email" name="data[email]" placeholder="Digite seu email" required> 
+                    <textarea name="data[mensagem]" placeholder="Digite sua Mensagem" required></textarea>
+                    <button type="submit" class="btn" onclick="enviarFormulario()">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="Container">
+            <div class="Mídias-Sociais">
+                <a href="https://wa.me/559991802110?text=Olá,%20estou%20entrando%20em%20contato%20pelo%20seu%20portfólio." target="_blank"><i class="fa-brands fa-whatsapp" style="color: #B197FC;"></i></a>
+                <a href="https://github.com/beasilvamg" target="_blank"><i class="fa-brands fa-github" style="color: #B197FC;"></i></a>
+                <a href="https://www.linkedin.com/in/beasilvamg" target="_blank"><i class="fa-brands fa-linkedin" style="color: #B197FC;"></i></a>
+            </div>
+            <p>&copy; 2024 Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault(); // Impede o comportamento padrão do formulário
+
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+            })
+            .then(response => response.json())
+            .then((data) => {
+                
+                window.location.href = 'sucesso.html'; // Altere para a sua página de sucesso
+            })
+            .catch((error) => {
+                alert('Erro ao enviar a mensagem. Tente novamente mais tarde.'); // Alerta de erro
+            });
+        });
+    </script>
+
+</body>
+</html>

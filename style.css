@@ -1,0 +1,408 @@
+/*Estilo geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*menu navegação*/
+body {
+    background-color: black;
+    line-height: 1.6;
+    color: aliceblue;
+}
+
+header{
+    background-color: #b197fc;
+    color: aliceblue;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    margin: 0 15px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+}
+
+/*Escondendo o menu*/
+.label-menu,
+.checkbox {
+    display: none;
+}
+
+.Container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px 20px;
+}
+
+/*seção com foto e meu nome*/
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .perfil-img {
+        width: 300px; 
+        max-width: 100%; 
+        height: auto; 
+        border-radius: 50%; 
+        margin-right: 20px; 
+    }
+
+    .texto-perfil {
+        max-width: 70%; 
+        text-align: left;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
+
+.Sobre{
+
+    .Container{
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    
+    h2{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+ /*Estilo para seção sobre*/
+    strong, .destacado{
+        color: #b197fc;
+        font-weight: bold;
+    }
+    
+    .habilidades {
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    .Skills-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .Skills-list li{
+        background-color: #b197fc;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 1.2rem;
+    }
+
+    .Skills-list i{
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+}
+
+section{
+    padding: 90px 0;
+}
+
+h1, h2{
+    margin-bottom: 20px;
+}
+
+/*Estilo do trabalhos em destaque*/
+.Projetos{
+
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .Project-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 50px;
+    }
+
+    .project{
+        background-color: #B197FC;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .project img{
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .project h3{
+        padding: 15px 0;
+        font-size: 1.5rem;
+    }
+
+    .project p{
+        padding: 10px 10px;
+    }
+
+    .btn{
+        display: inline-block;
+        background-color: #8A2BE2;
+        color: rgb(255, 255, 255);
+        padding: 15px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+        transition: backgroud-color 0.3s;
+    }
+
+    .btn:hover{
+        background-color: #393641;
+    }
+
+}
+
+.Contato{
+
+    .Container{
+        max-width: 1200px;
+    }
+
+    padding: 50px 0;
+    background-color: black;
+
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: aliceblue;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    input, textarea{
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #f5f5f5;
+        border-radius: 5px;
+        font-family: 'Roboto' , sans-serif;
+        font-size: 18px;
+    }
+/*Teste botão*/
+    button.btn {
+        padding: 15px;
+        border: none;
+        background-color: #B197FC; /* Cor de fundo do botão */
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover{
+        background-color: #8A2BE2;
+    }
+}
+
+footer{
+    background-color: black;
+    color: #ffff;
+    text-align: center;
+    padding: 20px 0;
+
+    .Mídias-Sociais{
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .Mídias-Sociais a{
+        font-size: 1.5rem;
+        margin: 0 10px;
+        font-size: 35px;
+        transition: color 0.3s;
+    }
+
+    .Mídias-Sociais a:hover{
+        color: black;
+    }
+}
+
+@media (max-width: 750px){
+/*Parte menu*/
+    .menu{
+        display: block;
+        position: absolute;
+        top: 5.5700rem;
+        left: 0;
+        background-color: #b097fc62;
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        transition: 0.5s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-radius: 0;
+    }
+
+    .label-menu{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        color: #f5f5f5;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        position: relative;
+        width: 1.25rem;
+        height: 0.125rem;
+        background-color: #f5f5f5;
+        border: none;
+    }
+    
+    .hamburger::before,
+    .hamburger::after{
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: #f5f5f5;
+        position: absolute;
+        left: 0;
+        transition: 0.3s;
+    }
+    
+    .hamburger::before {
+        top: -0.375rem; 
+    }
+    
+    .hamburger::after {
+        top: 0.375rem; 
+    }
+
+    /* Quando o checkbox está marcado, o menu aparece */
+    .checkbox:checked ~ .menu {
+    height: calc(100vh - 5.5700rem);  /* Expande o menu para o tamanho da tela */
+    visibility: visible;  /* Torna o menu visível */
+    overflow-y: auto;     /* Permite rolagem se necessário */
+    }
+    
+    /* Transformação do hambúrguer em "X" */
+    .checkbox:checked ~ .label-menu .hamburger {
+        background-color: transparent; /* Remove a linha do meio */
+    }
+    
+    .checkbox:checked ~ .label-menu .hamburger::before {
+        transform: rotate(45deg); /* Rotação da linha superior */
+        top: 0; 
+    }
+    
+    .checkbox:checked ~ .label-menu .hamburger::after {
+        transform: rotate(-45deg); /* Rotação da linha inferior */
+        top: 0; 
+    }
+
+    .topo {
+        flex-direction: column; /* Coloca o conteúdo em coluna para que a imagem e o texto fiquem um abaixo do outro */
+        align-items: center;    /* Centraliza a imagem e o texto */
+        text-align: center;     /* Centraliza o texto */
+    }
+
+/* Ajuste geral largura*/
+    .Container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+/*Ajustar a imagem de perfil*/
+    .perfil-img {
+        margin-right: 0;       /* Remove o espaçamento à direita da imagem */
+        margin-bottom: 20px;   /* Adiciona espaçamento abaixo da imagem */
+        max-width: 80%;        /* Reduz o tamanho da imagem */
+    }
+
+    .texto-perfil {
+        max-width: 100%;       /* Permite que o texto ocupe toda a largura disponível */
+    }
+
+    /*Reduzir o tamanho da grid*/
+    .Project-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /*Tamanho da imagem dos projetos*/
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+     /* Ajuste do formulário de contato para responsividade */
+     form input,
+     form textarea {
+         width: 100%;
+         margin-bottom: 1rem;
+     }
+ 
+     /* Centralizar ícones sociais no footer */
+     .Mídias-Sociais {
+         display: flex;
+         justify-content: center;
+         gap: 1rem;
+     }
+ 
+     /* Ajustar tamanho dos ícones no footer */
+     .Mídias-Sociais i {
+         font-size: 1.5rem;
+     }
+
+    main{
+        justify-content: center;
+        align-items: center;
+    }
+}
